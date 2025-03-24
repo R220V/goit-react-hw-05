@@ -24,6 +24,11 @@ import { IoClose } from "react-icons/io5";
 npm i react-spinners
 import ClipLoader from "react-spinners/ClipLoader";
 
+npm i modern-normalize
+
+npm i clsx
+
+react-router-dom
 ============================================================
 npm create vite@latest
 .
