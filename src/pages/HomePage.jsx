@@ -25,7 +25,7 @@ export default function HomePage (){
 
 	return(
 		<div>
-			 <h1 style={{display: "flex", justifyContent:"center"
+			 <h1 style={{display: "flex", justifyContent:"center",
 			 }}>Trending movies today</h1>
       {isLoading && <b>Loading...</b>}
       {error && <b>{error}</b>}

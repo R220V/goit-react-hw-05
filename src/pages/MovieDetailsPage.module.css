@@ -1,0 +1,20 @@
+
+.divka{
+	background: linear-gradient(-18deg, rgba(251, 255, 0, 0), #0073ff4d);
+	border-radius: 5px;
+	margin: 20px;	
+	padding: 5px;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid grey;
+	border-radius: 8px;
+	
+}
+.ulka {
+	margin: 0 auto;
+	font-size: 20px;
+  }
+ 

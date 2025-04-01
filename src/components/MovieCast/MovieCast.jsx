@@ -1,9 +1,11 @@
-import css from "./MovieCast.module.css";
 import { useParams } from "react-router-dom";
 import { fetchMovieCast } from "../SearchMovies";
 import { useEffect, useState } from "react";
 
+import css from "./MovieCast.module.css";
+
 export default function MovieCast() {
+  
   const { movieId } = useParams();
   const [castMovie, setCastMovie] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -28,7 +30,6 @@ export default function MovieCast() {
     <div className={css.wrap}>
       {isLoading && <b>Loading...</b>}
       {error && <b>{error}</b>}
-      {/* <h3>Cast</h3> */}
       <div className={css.block}>
         {castMovie.length > 0 ? (
           castMovie.map((actor) => (
@@ -43,7 +44,7 @@ export default function MovieCast() {
             </div>
           ))
         ) : (
-          <p>No cast information available.</p>
+          <p className={css.pka}>"No cast information available..."</p>
         )}
       </div>
     </div>

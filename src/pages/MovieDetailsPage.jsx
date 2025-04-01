@@ -70,13 +70,9 @@ export default function MovieDetailsPage() {
   
 	return (
 	  <div>
-		   <Link to={backLinkRef.current}>← Go Back</Link>
-		{/* <button
-		  className={css.back}
-		  onClick={() => navigate(location.state?.from ?? "/")}
-		>
-		  ← Go Back
-		</button> */}
+		<div className={css.divka} >
+		   <Link  to={backLinkRef.current}>← Go Back </Link>
+		   </div>
   
 		{isLoading && <b>Loading...</b>}
 		{error && <b>Error...</b>}
@@ -85,7 +81,7 @@ export default function MovieDetailsPage() {
   
 		<div className={css.info}>
 		  <p>Additional information</p>
-		  <ul>
+		  <ul className={css.ulka}>
 			<li>
 			  <Link to="cast">Cast</Link>
 			</li>

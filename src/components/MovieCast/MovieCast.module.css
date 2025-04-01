@@ -1,6 +1,5 @@
 .block {
 	display: flex;
-	/* justify-content: space-between; */
 	flex-wrap: wrap;
 	gap: 20px;
   }
@@ -10,6 +9,13 @@ max-width: 1200px;
 display: flex;
 padding: 10px;
 background-color: rgba(250, 235, 215, 0.397);
-border-radius: 8px;
 margin: 10px;
+}
+.pka{
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+	font-style: italic;
+	color: rgb(44, 12, 73);
+	background-color: #ffffff73;
 }

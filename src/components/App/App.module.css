@@ -1,12 +1,9 @@
 .container {
 	max-width: 1800px;
-	/* margin: 10px auto; */
 	padding: 0 16px;
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
 	flex-direction: column;
-	/* width: calc(100% / 5); */
 	gap: 20px;
 
   }

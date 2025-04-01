@@ -18,7 +18,7 @@ export default function MovieInfo({ movie }) {
 
       <div>
         <h1>{movie.title}</h1>
-        <p>User score : {`${(movie.vote_average * 10).toFixed(0)}%`}</p>
+        <b style={{fontSize: "22px"}}>User score : {`${(movie.vote_average * 10).toFixed(0)}%`}</b>
         <p>Overview : {movie.overview}</p>
         <p>Genres: {movie.genres.map((genre) => genre.name).join(", ")}</p>
       </div>

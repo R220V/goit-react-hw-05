@@ -79,6 +79,3 @@ export const fetchMovieById = async (movieId) => {
   
 	return response.data.cast;
   };
-
-
-// key api 67b0aadcd4d4e4637c4d0e8c5d98ce9
