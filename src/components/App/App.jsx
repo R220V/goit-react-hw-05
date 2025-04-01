@@ -1,28 +1,27 @@
 
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import './App.css'
+import css from "./App.module.css"
 
-import Navigation from "./components/Navigation/Navigation";
+import Navigation from "../Navigation/Navigation";
 
 
-const HomePage = lazy(() => import("./pages/HomePage"));
+const HomePage = lazy(() => import("../../pages/HomePage"));
 
-const MoviesPage = lazy(() => import("./pages/MoviesPage"))
+const MoviesPage = lazy(() => import("../../pages/MoviesPage"))
 const MovieDetailsPage = lazy(() =>
-  import("./pages/MovieDetailsPage")
+  import("../../pages/MovieDetailsPage")
 );
-const MovieCast = lazy(() => import("./components/MovieCast/MovieCast"));
+const MovieCast = lazy(() => import("../MovieCast/MovieCast"));
 const MovieReviews = lazy(() =>
-  import("./components/MovieReviews/MovieReviews")
+  import("../MovieReviews/MovieReviews")
 );
-const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
+const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 export default function App() {
 return(
-	<>
-	<h3>212</h3>
- 
+	<div className={css.container}>
+	 
  <Navigation />
  <Suspense>
  <Routes>
@@ -36,6 +35,6 @@ return(
 
  </Routes>
  </Suspense>
-</>
+</div>
 )
 }

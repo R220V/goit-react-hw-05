@@ -21,8 +21,11 @@ export default function SearchM({ onSubmit }) {
 		name="query"
 		value={query}
 		onChange={handleChange}
+		autoComplete="off"
+		autoFocus
+		placeholder="Search movies"
 	  />
-	  <button className={css.searchBttn} type="submit">
+	  <button className={css.btn} type="submit">
 		Search
 	  </button>
 	</form>

@@ -29,7 +29,8 @@ export default function HomePage (){
 
 	return(
 		<div>
-			 <h1>Trending movies today</h1>
+			 <h1 style={{display: "flex", justifyContent:"center"
+			 }}>Trending movies today</h1>
       {isLoading && <b>Loading...</b>}
       {error && <b>{error}</b>}
 	  {movies.length > 0 && <MovieList movies={movies} />}

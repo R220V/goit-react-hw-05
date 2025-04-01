@@ -17,7 +17,6 @@ export default function MovieList({ movies }) {
             <img
               src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`}
               alt={movie.title}
-              className={css.poster}
             />
           </Link>
         </li>
