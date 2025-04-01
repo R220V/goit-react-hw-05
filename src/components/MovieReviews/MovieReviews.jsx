@@ -2,6 +2,7 @@
 import { useParams } from "react-router-dom";
 import { fetchMovieReviews } from "../SearchMovies";
 import { useEffect, useState } from "react";
+import css from "./MovieReviews.module.css"
 
 export default function MovieReviews() {
   const { movieId } = useParams();
@@ -31,7 +32,7 @@ export default function MovieReviews() {
   if (error) return <p>{error}</p>;
 
   return (
-	<div>
+	<div  className={css.wrap} >
 	  {reviews.length > 0 ? (
 		reviews.map((review) => (
 		  <div key={review.id}>

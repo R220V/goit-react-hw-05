@@ -1,13 +1,11 @@
-.block {
-	display: flex;
-	/* justify-content: space-between; */
-	flex-wrap: wrap;
-	gap: 20px;
-  }
+p{
+	font-size: large;
+}
 
 .wrap{
 max-width: 1200px;
 display: flex;
+gap: 30px;
 padding: 10px;
 background-color: rgba(250, 235, 215, 0.397);
 border-radius: 8px;

@@ -25,10 +25,10 @@ export default function MovieCast() {
   }, [movieId]);
 
   return (
-    <div>
+    <div className={css.wrap}>
       {isLoading && <b>Loading...</b>}
       {error && <b>{error}</b>}
-      <h3>Cast</h3>
+      {/* <h3>Cast</h3> */}
       <div className={css.block}>
         {castMovie.length > 0 ? (
           castMovie.map((actor) => (

@@ -1,4 +1,4 @@
-.iteam {
+/* .iteam {
 	list-style: none;
   }
   
@@ -6,4 +6,14 @@
 	font-weight: 400;
 	font-size: 17px;
 	margin: 10px 0;
-  }
+  } */
+
+
+.wrap{
+max-width: 1200px;
+display: flex;
+padding: 10px;
+background-color: rgba(250, 235, 215, 0.397);
+border-radius: 8px;
+margin: 10px;
+}

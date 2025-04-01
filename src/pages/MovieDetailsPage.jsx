@@ -70,13 +70,13 @@ export default function MovieDetailsPage() {
   
 	return (
 	  <div>
-		   {/* <Link to={backLinkRef.current}>Go Back</Link> */}
-		<button
+		   <Link to={backLinkRef.current}>← Go Back</Link>
+		{/* <button
 		  className={css.back}
 		  onClick={() => navigate(location.state?.from ?? "/")}
 		>
 		  ← Go Back
-		</button>
+		</button> */}
   
 		{isLoading && <b>Loading...</b>}
 		{error && <b>Error...</b>}

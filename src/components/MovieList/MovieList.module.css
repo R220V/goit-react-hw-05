@@ -24,9 +24,11 @@
 
   
   .title {
+	display: flex;
+	justify-content: center;
 	font-size: 22px;
 	color: #213547;
-    font-weight: 700;
+    font-weight: 500;
 	/* margin:  auto; */
   }
   
