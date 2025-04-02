@@ -10,7 +10,7 @@ const HomePage = lazy(() => import("../../pages/HomePage"));
 
 const MoviesPage = lazy(() => import("../../pages/MoviesPage"))
 const MovieDetailsPage = lazy(() =>
-  import("../../pages/MovieDetailsPage")
+  import("../../pages/MovieDetailsPage.jsx")
 );
 const MovieCast = lazy(() => import("../MovieCast/MovieCast"));
 const MovieReviews = lazy(() =>
@@ -23,7 +23,7 @@ return(
 	<div className={css.container}>
 	 
  <Navigation />
- <Suspense>
+ <Suspense fallback={<p>Your page is Loading...</p>}>
  <Routes>
    <Route path="/" element={<HomePage />} />
    <Route path="/movies" element={<MoviesPage />} />
